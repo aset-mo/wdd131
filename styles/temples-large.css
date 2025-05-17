@@ -1,0 +1,48 @@
+nav.navigation {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+#menu {
+  display: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+figure {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+h2 {
+  font-family: "Ancizar Serif", serif;
+  text-align: center;
+}
+
+nav.navigation {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#menu {
+  display: none;
+}
+
+.container {
+  grid-template-columns: repeat(3, 1fr);
+}

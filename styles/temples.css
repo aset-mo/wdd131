@@ -1,0 +1,65 @@
+body {
+  font-family: "Ancizar Serif", serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #3c0064;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav.navigation {
+  display: none;
+  flex-direction: column;
+  background-color: #3c0064;
+}
+
+nav.navigation a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+nav.navigation a:hover {
+  background-color: #58007f;
+}
+
+#menu {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+}
+
+main {
+  padding: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+footer {
+  background-color: #3c0064;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav.navigation.open {
+  display: flex;
+}
