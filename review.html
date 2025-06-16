@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+    <meta name="description" content="Confirmation page for a product review submission.">
+    <meta name="author" content="Isis Mercado Ortega">
+    <style>
+        :root {
+            --primary-color: #3d0e3a;
+            --secondary-color: #f3e5f5;
+            --text-color: #333;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            text-align: center;
+        }
+        header, footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+        }
+        main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+        }
+        .confirmation-box {
+            background-color: white;
+            padding: 2rem;
+            border: 1px solid var(--primary-color);
+            border-radius: 8px;
+            max-width: 500px;
+        }
+        .confirmation-box h1 {
+            color: var(--primary-color);
+        }
+        #reviewCounter {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        footer {
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Review Submitted</h1>
+    </header>
+
+    <main>
+        <div class="confirmation-box">
+            <h1>Thank You!</h1>
+            <p>Your review has been received.</p>
+            <p>You have completed <span id="reviewCounter">...</span> review(s).</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span>| 🍰 Isis Mercado Ortega 🍰</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let reviewCount = Number(localStorage.getItem('reviewSubmissionCount')) || 0;
+            
+            reviewCount++;
+            
+            localStorage.setItem('reviewSubmissionCount', reviewCount);
+            
+            const counterSpan = document.getElementById('reviewCounter');
+            if (counterSpan) {
+                counterSpan.textContent = reviewCount;
+            }
+
+            const currentYearSpan = document.getElementById('currentYear');
+            if (currentYearSpan) {
+                currentYearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
+</body>
+</html>
