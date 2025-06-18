@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andes Trekker - Website Planning Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #34495e;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #555;
+            margin-top: 20px;
+        }
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+        ol {
+            list-style: decimal;
+            margin-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .code-block {
+            background-color: #eee;
+            padding: 15px;
+            border-left: 5px solid #259857;
+            font-family: monospace;
+            white-space: pre-wrap; /* Ensures line breaks are respected */
+            word-wrap: break-word; /* Breaks long words */
+            margin: 15px 0;
+            overflow-x: auto; /* Adds scrollbar for very long lines */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Website Planning Document</h1>
+
+        <h2>Project Title: Andes Trekker</h2>
+
+        <h3>Site Name</h3>
+        <p><strong>Andes Trekker</strong></p>
+        <p>The name reflects the core focus of the website: trekking routes in the Andes Mountains. It’s clear, concise, and memorable for outdoor and adventure enthusiasts.</p>
+        <p>Optional domain availability: <code>andestrekker.netlify.app</code> or <code>andestrekker.github.io</code></p>
+
+        <h2>Site Purpose</h2>
+        <p>The purpose of Andes Trekker is to provide up-to-date information on trekking routes in the Andes. The site will offer route recommendations, difficulty levels, trail maps, equipment checklists, and a form for subscribing to newsletters and guided hiking events.</p>
+
+        <h2>Scenarios</h2>
+        <ul>
+            <li>What trekking routes are suitable for beginners in the Andes?</li>
+            <li>Where can I download a detailed map and elevation profile of a specific route?</li>
+            <li>How can I register for upcoming guided hiking tours?</li>
+        </ul>
+
+        <h2>Target Audience</h2>
+        <p>Outdoor enthusiasts, hikers, travelers visiting South America, and people researching trekking options in the Andes.</p>
+
+        <h2>Color Scheme</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Color</th>
+                    <th>Usage</th>
+                    <th>HEX</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Forest Green</td>
+                    <td>Headings, buttons</td>
+                    <td>#259857</td>
+                </tr>
+                <tr>
+                    <td>Light Gray</td>
+                    <td>Backgrounds, input fields</td>
+                    <td>#F5F5F5</td>
+                </tr>
+                <tr>
+                    <td>Charcoal Black</td>
+                    <td>Body text</td>
+                    <td>#333333</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Typography</h2>
+        <ul>
+            <li><strong>Montserrat:</strong> Used for all headings and navigation links.</li>
+            <li><strong>Roboto:</strong> Used for paragraph/body text and form inputs.</li>
+        </ul>
+        <p>Fonts will be loaded using Google Fonts.</p>
+
+        <h2>Pages</h2>
+        <p>Your website will contain at least 3 main pages:</p>
+        <ol>
+            <li><strong>Home (<code>index.html</code>)</strong> — Hero image, introduction, call to action, route highlights.</li>
+            <li><strong>Routes (<code>routes.html</code>)</strong> — List of trekking routes (generated from JavaScript array), with sorting/filtering features.</li>
+            <li><strong>Contact (<code>contact.html</code>)</strong> — HTML form for newsletter registration or inquiries.</li>
+            <li><strong>References (<code>references.html</code>)</strong> — Cites all external sources (text, images).</li>
+        </ol>
+
+        <h2>HTML Form</h2>
+        <ul>
+            <li>Located in <code>contact.html</code></li>
+            <li>Required fields: name, email, message</li>
+            <li>Optional checkbox for newsletter subscription</li>
+            <li>Use <code>required</code>, <code>type</code>, and <code>pattern</code> attributes for validation</li>
+        </ul>
+
+        <h2>Image Use</h2>
+        <p>All images will use:</p>
+        <div class="code-block">
+<pre>&lt;img src="img/path.jpg" alt="Trail image" loading="lazy"&gt;</pre>
+        </div>
+        <h2>Footer</h2>
+        <p>Repeated across all pages</p>
+        <ul>
+            <li>Includes copyright</li>
+            <li>Link to <code>references.html</code></li>
+        </ul>
+        <p>Example:</p>
+        <div class="code-block">
+<pre>&lt;footer&gt;
+  &lt;p&gt;&amp;copy; 2025 Andes Trekker. All rights reserved.&lt;/p&gt;
+  &lt;a href="references.html"&gt;References&lt;/a&gt;
+&lt;/footer&gt;</pre>
+        </div>
+    </div>
+            <h2>Wireframe</h2>
+        <img src="images/wireframe-web.JPG" alt="A wireframe for the desktop view of the project page.">
+        <img src="images/wireframe-mobile.JPG" alt="A wireframe for the mobile view of the project page.">
+</body>
+</html>
