@@ -1,0 +1,65 @@
+/* Large Screen Styles for Andes Trekker */
+
+@media screen and (min-width: 768px) {
+    /* Header and Navigation */
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav .logo {
+        margin-bottom: 0;
+    }
+
+    nav ul {
+        flex-direction: row;
+        width: auto;
+    }
+
+    nav ul li {
+        margin: 0 1em;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: 400px; /* Taller hero image for larger screens */
+    }
+
+    .hero-overlay h1 {
+        font-size: 3em;
+    }
+
+    .hero-overlay p {
+        font-size: 1.3em;
+    }
+
+    /* Route Highlights Grid */
+    .route-highlights .highlights-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
+    }
+
+    /* Routes Page Filters */
+    .filters {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1.5em;
+    }
+
+    .filters select {
+        width: auto; /* Don't stretch select boxes */
+    }
+
+    /* Routes Grid */
+    .routes-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
+    }
+
+    /* If you have more than two columns, adjust here */
+    @media screen and (min-width: 1024px) {
+        .route-highlights .highlights-grid,
+        .routes-grid {
+            grid-template-columns: repeat(3, 1fr); /* Three columns for very large screens */
+        }
+    }
+}

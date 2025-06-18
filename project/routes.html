@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore a variety of trekking routes with Mountain Trekker. Filter by difficulty and sort by name or length.">
+    <meta name="Isis Mercado Ortega" content="Mountain Trekker Team">
+    <title>Mountain Trekker - Trekking Routes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css" media="screen and (min-width: 768px)">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Mountain Trekker</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rutas.html">Routes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="routes-overview">
+            <h1>Our Trekking Routes</h1>
+            <p>Discover a variety of routes tailored for different skill levels and interests. Use the filters below to find your perfect adventure!</p>
+
+            <div class="filters">
+                <label for="difficulty-filter">Filter by Difficulty:</label>
+                <select id="difficulty-filter">
+                    <option value="all">All</option>
+                    <option value="easy">Easy</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="challenging">Challenging</option>
+                </select>
+
+                <label for="sort-by">Sort By:</label>
+                <select id="sort-by">
+                    <option value="name">Name (A-Z)</option>
+                    <option value="length-asc">Length (Shortest First)</option>
+                    <option value="length-desc">Length (Longest First)</option>
+                </select>
+            </div>
+
+            <div id="routes-container" class="routes-grid">
+                <p>Loading routes...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mountain Trekker. All rights reserved.</p>
+        <a href="references.html">References</a>
+    </footer>
+
+    <script src="scripts/routes.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
